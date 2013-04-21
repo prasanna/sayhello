@@ -1,4 +1,4 @@
-require 'app'
+require 'sayhello'
 
 set :environment, ENV['RACK_ENV'].to_sym
 set :app_file,     'sayhello.rb'
