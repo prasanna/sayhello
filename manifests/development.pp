@@ -10,17 +10,17 @@ file { '/etc/motd':
 }
 
 package { 
-  'rubygems' : 
-    name => 'rubygems',
+ 'rubygems' : 
+  name => 'rubygems',
 }
 
 package { 'bundler':
-    ensure   => 'installed',
-    provider => 'gem',
+  ensure   => 'installed',
+  provider => 'gem',
 }
 
 exec { 'bundle_install':
-	command => "bundle install",
-	path => "/usr/local/bin",
-	cwd => "/vagrant"
+  command => "bundle install",
+  path => "/usr/local/bin",
+  cwd => "/vagrant"
 }
