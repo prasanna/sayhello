@@ -1,5 +1,4 @@
 # Say Hello
-=========
 
 Hello!
 
